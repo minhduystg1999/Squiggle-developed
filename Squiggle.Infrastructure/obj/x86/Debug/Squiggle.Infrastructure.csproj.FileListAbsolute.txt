@@ -1,0 +1,6 @@
+E:\Squiggle-3.4.4-beta\Squiggle.Infrastructure\bin\x86\Debug\Squiggle.Infrastructure.dll
+E:\Squiggle-3.4.4-beta\Squiggle.Infrastructure\bin\x86\Debug\Squiggle.Infrastructure.pdb
+E:\Squiggle-3.4.4-beta\Squiggle.Infrastructure\obj\x86\Debug\Squiggle.Infrastructure.csproj.CoreCompileInputs.cache
+E:\Squiggle-3.4.4-beta\Squiggle.Infrastructure\obj\x86\Debug\Squiggle.Infrastructure.dll
+E:\Squiggle-3.4.4-beta\Squiggle.Infrastructure\obj\x86\Debug\Squiggle.Infrastructure.pdb
+E:\Squiggle-3.4.4-beta\Squiggle.Infrastructure\obj\x86\Debug\Squiggle.Infrastructure.csprojAssemblyReference.cache

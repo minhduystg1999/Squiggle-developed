@@ -1,0 +1,15 @@
+E:\Squiggle-3.4.4-beta\Squiggle.Core\bin\Squiggle.Core.dll
+E:\Squiggle-3.4.4-beta\Squiggle.Core\bin\Squiggle.Core.pdb
+E:\Squiggle-3.4.4-beta\Squiggle.Core\bin\protobuf-net.dll
+E:\Squiggle-3.4.4-beta\Squiggle.Core\bin\Squiggle.Infrastructure.dll
+E:\Squiggle-3.4.4-beta\Squiggle.Core\bin\Squiggle.Utilities.dll
+E:\Squiggle-3.4.4-beta\Squiggle.Core\bin\NetMQ.dll
+E:\Squiggle-3.4.4-beta\Squiggle.Core\bin\Squiggle.Infrastructure.pdb
+E:\Squiggle-3.4.4-beta\Squiggle.Core\bin\Squiggle.Utilities.pdb
+E:\Squiggle-3.4.4-beta\Squiggle.Core\bin\protobuf-net.pdb
+E:\Squiggle-3.4.4-beta\Squiggle.Core\bin\protobuf-net.xml
+E:\Squiggle-3.4.4-beta\Squiggle.Core\obj\x86\Debug\Squiggle.Core.csprojAssemblyReference.cache
+E:\Squiggle-3.4.4-beta\Squiggle.Core\obj\x86\Debug\Squiggle.Core.csproj.CoreCompileInputs.cache
+E:\Squiggle-3.4.4-beta\Squiggle.Core\obj\x86\Debug\Squiggle.Core.csproj.CopyComplete
+E:\Squiggle-3.4.4-beta\Squiggle.Core\obj\x86\Debug\Squiggle.Core.dll
+E:\Squiggle-3.4.4-beta\Squiggle.Core\obj\x86\Debug\Squiggle.Core.pdb

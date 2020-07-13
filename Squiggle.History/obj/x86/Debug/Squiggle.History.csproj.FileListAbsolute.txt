@@ -1,0 +1,17 @@
+E:\Squiggle-3.4.4-beta\Squiggle.History\bin\History.db
+E:\Squiggle-3.4.4-beta\Squiggle.History\bin\Squiggle.History.dll.config
+E:\Squiggle-3.4.4-beta\Squiggle.History\bin\Squiggle.History.dll
+E:\Squiggle-3.4.4-beta\Squiggle.History\bin\Squiggle.History.pdb
+E:\Squiggle-3.4.4-beta\Squiggle.History\bin\EntityFramework.dll
+E:\Squiggle-3.4.4-beta\Squiggle.History\bin\EntityFramework.SqlServer.dll
+E:\Squiggle-3.4.4-beta\Squiggle.History\bin\System.Data.SQLite.dll
+E:\Squiggle-3.4.4-beta\Squiggle.History\bin\System.Data.SQLite.EF6.dll
+E:\Squiggle-3.4.4-beta\Squiggle.History\bin\System.Data.SQLite.Linq.dll
+E:\Squiggle-3.4.4-beta\Squiggle.History\bin\EntityFramework.xml
+E:\Squiggle-3.4.4-beta\Squiggle.History\bin\EntityFramework.SqlServer.xml
+E:\Squiggle-3.4.4-beta\Squiggle.History\bin\System.Data.SQLite.xml
+E:\Squiggle-3.4.4-beta\Squiggle.History\obj\x86\Debug\Squiggle.History.csprojAssemblyReference.cache
+E:\Squiggle-3.4.4-beta\Squiggle.History\obj\x86\Debug\Squiggle.History.csproj.CoreCompileInputs.cache
+E:\Squiggle-3.4.4-beta\Squiggle.History\obj\x86\Debug\Squiggle.History.csproj.CopyComplete
+E:\Squiggle-3.4.4-beta\Squiggle.History\obj\x86\Debug\Squiggle.History.dll
+E:\Squiggle-3.4.4-beta\Squiggle.History\obj\x86\Debug\Squiggle.History.pdb
