@@ -517,21 +517,45 @@ namespace Squiggle.UI.Windows
 
         void DoBuzzAction()
         {
-            if (!PrimaryBuddy.IsIgnored || (!ignore && IsGroupChat))
-                AudioAlert.Instance.Play(AudioAlertType.Buzz);
+            if (IsGroupChat)
+            {
+                if (!ignore)
+                    AudioAlert.Instance.Play(AudioAlertType.Buzz);
+            }
+            else
+            {
+                if (!PrimaryBuddy.IsIgnored)
+                    AudioAlert.Instance.Play(AudioAlertType.Buzz);
+            }
             SquiggleUtility.ShakeWindow(this);
         }
 
         void DoLikeAction()
         {
-            if (!PrimaryBuddy.IsIgnored || (!ignore && IsGroupChat))
-                AudioAlert.Instance.Play(AudioAlertType.Like);
+            if (IsGroupChat)
+            {
+                if (!ignore)
+                    AudioAlert.Instance.Play(AudioAlertType.Like);
+            }
+            else
+            {
+                if (!PrimaryBuddy.IsIgnored)
+                    AudioAlert.Instance.Play(AudioAlertType.Like);
+            }
         }
 
         void PlayAlert(AudioAlertType alertType)
         {
-            if (!IsActive && (!PrimaryBuddy.IsIgnored || (!ignore && IsGroupChat)))
-                AudioAlert.Instance.Play(alertType);
+            if (IsGroupChat)
+            {
+                if (!IsActive && !ignore)
+                    AudioAlert.Instance.Play(alertType);
+            }
+            else
+            {
+                if (!IsActive && !PrimaryBuddy.IsIgnored)
+                    AudioAlert.Instance.Play(alertType);
+            }
         }
 
         void OnMessageReceived(IBuddy buddy, Guid id, string message, string fontName, System.Drawing.Color color, int fontSize, System.Drawing.FontStyle fontStyle)
@@ -544,8 +568,19 @@ namespace Squiggle.UI.Windows
                 chatTextBox.AddMessage(id, buddy.DisplayName, filteredMessage, fontName, fontSize, fontStyle, color, parsers, false);
                 FlashWindow();
                 PlayAlert(AudioAlertType.MessageReceived);
-                if (!chatState.ChatStarted && !IsActive && (!buddy.IsIgnored || (!ignore && IsGroupChat)))
-                    TrayPopup.Instance.Show(Translation.Instance.Popup_NewMessage, String.Format("{0} " + Translation.Instance.Global_ContactSays + ": {1}", buddy.DisplayName, filteredMessage), args => this.Restore());
+                if (!chatState.ChatStarted && !IsActive)
+                {
+                    if (IsGroupChat)
+                    {
+                        if (!ignore)
+                            TrayPopup.Instance.Show(Translation.Instance.Popup_NewMessage, String.Format("{0} " + Translation.Instance.Global_ContactSays + ": {1}", buddy.DisplayName, filteredMessage), args => this.Restore());
+                    }
+                    else
+                    {
+                        if (!PrimaryBuddy.IsIgnored)
+                            TrayPopup.Instance.Show(Translation.Instance.Popup_NewMessage, String.Format("{0} " + Translation.Instance.Global_ContactSays + ": {1}", buddy.DisplayName, filteredMessage), args => this.Restore());
+                    }
+                }
             });
             ResetStatus();
             chatState.ChatStarted = true;
@@ -889,6 +924,10 @@ namespace Squiggle.UI.Windows
             }
         }
 
+
+
+        //developed
+
         void ChangeTitle_Click(object sender, RoutedEventArgs e)
         {
             string title = this.Title;
@@ -898,6 +937,7 @@ namespace Squiggle.UI.Windows
                 titleChanged = true;
             }                
         }
+
 
         void UpdateTitle()
         {
